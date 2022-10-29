@@ -329,7 +329,7 @@ span{
 /* 4 секция */
 
 .section-4{
-    background-image: url("../images/coffeepeople.webp");
+    background-image: url("coffeepeople.webp");
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
