@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 1470px;
+    width: 26px;
+    height: 26px;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 30%;
+    height: 100%;
+    margin: 0px 1070px;
+    padding: 80px 0px 0px 0px;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+header{
+background-color: #02affe;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 20px;
+padding-left: 20px;
+}
+
+.logo{
+    max-width: 300px;
+ max-height: 62px;
+ transition: transform 1s;
+
+ animation: pulse 2s 1;
+}
+
+.logo img{
+    width:220px ;
+    height: 80px;
+}
+
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    color: white;
+
+}
+.backImg{
+    position: absolute;
+    top: 140px;
+    left: 100px;
+}
+
+.coffeenice{
+    width: 450px;
+    height: 550px;
+    padding-bottom: 10px;
+    
+}
+
+.section-1{
+    background-color: #02affe;
+    height: 600px;
+}
+
+.position-h4{
+    font-size: 300px;
+    color: rgba(220, 220, 220, 0.2);
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    z-index: 0;
+    font-weight: 900;
+}
+.section-1_article-1{
+    padding-top: 30vh;
+    padding-left: 30vw;
+}
+.section-1_article-1 h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-left:150px ;
+    padding-top: 40px;
+}
+.section-1_article-1 h1{
+    font-size: 100px;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 150px;
+    
+}
+.section-1_article-1 div{
+ display: flex;
+ padding-left: 150px;
+}
+.section-1_article-1 h3{
+    font-size: 40px;
+    color: white;
+}
+
+.section-1_article-1 s{
+    font-size: 25px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 12px;
+}
+
+.section-1_article-1 h5{
+    padding-left: 150px;
+    font-size: 20px;
+}
+.section-2{
+    padding-top:100px ;
+    padding-left:100px ;
+    height: 600px;
+    width: 400px;
+}
+
+.img{
+   width: 40px;
+   height: 20px;
+}
+.likes{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-bottom: 200px;
+    padding-top: 15px;
+}
+
+.section-2_article-1 h1{
+   font-size: 25px;
+}
+
+span{
+    color: #02affe;
+}
+
+.section-2_article-1{
+    width: 450px;
+}
+
+.By{
+    background-color: #02affe;
+    color: white;
+    font-size: 23px;
+    padding: 15px;
+    height:25px ;
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+.section-2_article-1 h2{
+    font-size: 20px;
+    color: #02affe;
+}
+
+.messenger img{
+    height: 20px;
+    width: 20px;
+    padding-top: 15px;
+}
+#imgGOOGLE{
+    height: 20px;
+    width: 35px;
+}
+
+#FACE{
+    padding-right: 10px;
+}
+
+.text{
+    display: flex;
+}
+
+.section-2_article-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.coffee{
+    width: 550px;
+    height: 300px;
+    padding-top: 100px;
+}
+
+.beauty{
+    color: grey;
+    text-align: center;
+}
+
+.off{
+    color: #02affe;
+}
+
+.section-3 .offer{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.section-3{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-3_div{
+    display: flex;
+}
+
+.row_img{
+    height:360px ;
+    width:260px ;
+
+}
+
+.row h3{
+    color: gray;
+    font-weight: 200;
+    padding-left: 10px;
+}
+
+.row h1{
+    color: #4d4c4c;
+    font-weight: 900;
+}
+
+.affogato{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.affogato>p{
+    color: #02affe;
+    font-size: 19px;
+}
+
+.line{
+    height: 1px;
+    background-color:#4d4c4c;
+    margin-top: 10px;
+}
+
+.lorem{
+    color: #5c5c5c;
+    margin-top: 10px;
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.lorem-ml{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ml{
+    margin-top:10px;
+}
+
+.row{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* 4 секция */
+
+.section-4{
+    background-image: url("../images/coffeepeople.webp");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-4_1{
+    position: relative;
+    top: 110px;
+    left: 800px;
+}
+
+.section-4 article{
+    position: absolute;
+}
+
+.section-4 h2{
+    background-color: #02affe;
+    color: white;
+    font-size: 23px;
+    padding: 15px;
+    height:25px ;
+    font-weight: 900;
+    width: 190px;
+    margin-left: 280px;
+}
+
+.section-4 h1{
+    color: white;
+    font-size: 30px;
+    width: 500px;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.line-2{
+    height: 1px;
+    background-color:#02affe;
+    margin-top: 10px;
+    width: 130px;
+    margin-left: 370px;
+}
+
+.section-4 p{
+    color: white;
+    margin-left: 375px;
+    padding-top: 10px;
+}
+
+.section-5-article h1{
+    font-size: 35px;
+}
+
+.blueblock{
+    background-color: #02affe;
+    width: 260px;
+    text-align: center;
+    color: white;
+    font-weight: 50;
+}
+
+.greyblock{
+    background-color: #23232b;
+    width: 260px;
+    color: white;
+    font-weight: 900;
+}
+
+.line-3{
+    height: 1px;
+    background-color:#4d4c4c;
+    width: 230px;
+    margin:auto;
+}
+
+.greyblock h2{
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.greyblock p{
+    padding-left: 20px;
+}
+
+.p1{
+    padding-top: 10px;
+}
+
+
+
+.section-5-article{
+    position: absolute;
+    top: 2900px;
+    left: 200px;
+}
+ 
